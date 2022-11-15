@@ -56,9 +56,13 @@ As a group the 3 lots combined do not reject the null hypothesis and there is no
 Lots 1 and 2 failed to reject the null. Lot 3 however showed evidence of statistical difference from the mean. With a confidence level 95% we can say that the mean is not 1500. 
 
 ## Study Design: MechaCar vs Competition
+AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. I suggest a study to identify bottle necks in the production lines. We can use an ANOVA test to compare the production times of different shifts of line workers. 
+
+We would measure the average time of assembly of teams during different shifts. We would identify a mean for the company as a whole, a population mean, and then compare 1st, 2nd, and 3rd shifts to identify if different shift times result in increased variance in mean assembly times. Using an ANOVA test we can test if all groups have equal means or not. 
+
+H0: The means of all groups are equal
+HA: At least one of the means is different from all other groups
+
+If the null hypothesis is rejected then we would need to look at the summary statistics of each shift to identify which shifts are slowing down assembly times. 
 
 
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
