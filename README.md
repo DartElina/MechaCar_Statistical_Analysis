@@ -7,8 +7,10 @@ We performed the following analysis: linear regression, collected summary statis
 ## Linear Regression to Predict MPG
 We performed a linear regression analysis to identify and predict how certain variables effected fuel efficiency. 
 
-Our regression is estimated as:
-**mpg= 104 + 6.267VL + .0012VW + .069SA + 3.546GC - 3.411AWD**
+Our regression is estimated as: **mpg= 104 + 6.267VL + .0012VW + .069SA + 3.546GC - 3.411AWD**
+
+![LM](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/LM.png)
+![summary LM](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/SummaryLM.png)
 
 **Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?**
 The intercept, vehicle length, and ground clearance were shown to be significant. This means that vehicle length and ground clearance had the most significant impact on MPG, or provided a non-random amount of variance to the MPG. The others could have a random amount of variance in our model. 
@@ -26,12 +28,17 @@ The miles per gallons are predicted to be increased by the vehicle length, vehic
 ## Summary Statistics on Suspension Coils
 **The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?**
 
-We collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots. The total summary statistics show us the mean, median, variance and standard deviation of all the lots combined. However, we collected summary statisticsfor each lot to check that they are consistent. 
+![summary ALL](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/SummStatsTotal.png)
+![summary EACH](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/SummStatsLOTS.png)
 
-In the lot summary table we see that lots 1 and 2 have matching means and median with very small variance and standard deviations. These lots are producing suspension coils with very consistent PSI measurements. Lot 3 has an issue with consistency, there is a large variance in the PSI. Lot 3 may not be safe and needs further inspection.  
+We collect summary statistics on the pounds per square inch (PSI) of the suspension coils from the manufacturing lots. The total summary statistics show us the mean, median, variance and standard deviation of all the lots combined. Combined they meet the design specs. However, we collected summary statisticsfor each lot to check that they are consistent. 
+
+In the lot summary table we see that lots 1 and 2 have matching means and median with very small variance and standard deviations. These lots are producing suspension coils with very consistent PSI measurements. Lot 3 has an issue with consistency, there is a large variance in the PSI. Lot 3 may not be safe and needs further inspection. Lot 3 variance doesn't meet the design specifications.  
 
 ## T-Tests on Suspension Coils
 We further anaylzed by running t-tests to determine if the manufacturing lots are statistically different from the mean population. 
+
+![Ttest All](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_AllLots.png)
 
 Our hypothesis in this analysis is:
 #### H0= PSI for ALL Manufacturing Lots is the same the population Mean (1500)
@@ -39,17 +46,17 @@ Our hypothesis in this analysis is:
 
 As a group the 3 lots combined do not reject the null hypothesis and there is no evidence that PSI is statistically different from 1500. However, in our previous analysis we saw that Lot 3 had very different summary statistics than Lots 1 and 2. So we performed these t-tests on each lot. 
 
+![1](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_Lot1.png)
+![2](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_Lot2.png)
+![3](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_Lot3.png)
+
 #### H0= PSI for EACH Manufacturing Lot is the same the population Mean (1500)
 #### HA= PSI is statistical different from the population mean (1500)
 
 Lots 1 and 2 failed to reject the null. Lot 3 however showed evidence of statistical difference from the mean. With a confidence level 95% we can say that the mean is not 1500. 
 
 ## Study Design: MechaCar vs Competition
-Our linear regression shows that vehicle length, weight, ground clearance, and spoiler angle all increase miles per gallon. However, having all wheel drive reduces the miles per gallon. I recommend surveying potential customers to learn if they find AWD or fuel efficiency to be more desirable characteristics in their new MechaCar. Since these 2 characteristics have a negative relationship identifying which is more important to our customers means we can maximize customer satisfaction and increase overall sales of the New Product. 
 
-
-Assuming that currently our MechaCar is focused on fuel efficiency, the control group would not include the AWD. Our null hypothesis would be:
-H0: 
 
 What metric or metrics are you going to test?
 What is the null hypothesis or alternative hypothesis?
