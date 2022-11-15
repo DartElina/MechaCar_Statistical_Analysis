@@ -41,8 +41,8 @@ We further anaylzed by running t-tests to determine if the manufacturing lots ar
 ![Ttest All](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_AllLots.png)
 
 Our hypothesis in this analysis is:
-#### H0= PSI for ALL Manufacturing Lots is the same the population Mean (1500)
-#### HA= PSI is statistical different from the population mean (1500)
+#### H0: PSI for ALL Manufacturing Lots is the same the population Mean (1500)
+#### HA: PSI is statistical different from the population mean (1500)
 
 As a group the 3 lots combined do not reject the null hypothesis and there is no evidence that PSI is statistically different from 1500. However, in our previous analysis we saw that Lot 3 had very different summary statistics than Lots 1 and 2. So we performed these t-tests on each lot. 
 
@@ -50,8 +50,8 @@ As a group the 3 lots combined do not reject the null hypothesis and there is no
 ![2](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_Lot2.png)
 ![3](https://github.com/DartElina/MechaCar_Statistical_Analysis/blob/aecb73f75969864c1c80d623a050b0980f991e8d/images/T.test_Lot3.png)
 
-#### H0= PSI for EACH Manufacturing Lot is the same the population Mean (1500)
-#### HA= PSI is statistical different from the population mean (1500)
+#### H0: PSI for EACH Manufacturing Lot is the same the population Mean (1500)
+#### HA: PSI is statistical different from the population mean (1500)
 
 Lots 1 and 2 failed to reject the null. Lot 3 however showed evidence of statistical difference from the mean. With a confidence level 95% we can say that the mean is not 1500. 
 
@@ -60,8 +60,8 @@ AutosRUs’ newest prototype, the MechaCar, is suffering from production trouble
 
 We would measure the average time of assembly of teams during different shifts. We would identify a mean for the company as a whole, a population mean, and then compare 1st, 2nd, and 3rd shifts to identify if different shift times result in increased variance in mean assembly times. Using an ANOVA test we can test if all groups have equal means or not. 
 
-H0: The means of all groups are equal
-HA: At least one of the means is different from all other groups
+#### H0: The means of all groups are equal
+#### HA: At least one of the means is different from all other groups
 
 If the null hypothesis is rejected then we would need to look at the summary statistics of each shift to identify which shifts are slowing down assembly times. 
 
